@@ -1,0 +1,16 @@
+---
+import Base from "../layout/Base.astro";
+export const prerender = true;
+const title = "Revolutionizing Hosting.";
+---
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+ h1, p { font-family: 'Fredoka', system-ui, sans-serif; }
+</style>
+<Base title={title}>
+  <main class="flex flex-col gap-2 mt-40 items-center p-4 justify-center">
+    <h1 class="text-8xl sm:text-7xl font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-200 inline-block text-transparent bg-clip-text text-center">{title}</h1>
+    <p class="mt-6 text-white text-xl max-w-prose">Ignite the fastest server you have ever seen with your own 2 eyes.</p>
+
+  </main>
+</Base>
