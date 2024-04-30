@@ -1,5 +1,7 @@
-# Astro and Supabase demo
+![pteranodon banner](./public/images/banner.png)
 
-This demo uses [Astro](https://astro.build) and [Supabase](https://supabase.com) to create a simple app showcasing the use of Supabase's auth and database features.
+# Pteranodon
+Pteranodon is a modern client panel that exceeds all other billing systems.
 
-Try a [live demo](https://astro-supabase-auth.vercel.app/).
+# Disclaimer
+this panel is not finished, not recommended for use.
