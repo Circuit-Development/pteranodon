@@ -1,4 +1,6 @@
-![pteranodon banner](./public/images/banner.png)
+<p align="center">
+  <img src="./public/images/banner.png" />
+</p>
 
 # Pteranodon
 Pteranodon is a modern client panel that exceeds all other billing systems.
