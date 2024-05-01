@@ -1,10 +1,12 @@
 ---
 import Dash from "../layout/Dash.astro";
+const { email } = Astro.locals
+
 ---
 
 <Dash title="Dashboard">
   <nav
-    class="border-b w-56 h-full mr-auto bg-white dark:bg-zinc-800 dark:border-zinc-700 rounded-lg mt-6 mb-6 ml-6"
+    class="border-b w-56 mr-auto bg-white dark:bg-zinc-800 dark:border-zinc-700 rounded-lg mt-6 mb-6 ml-6"
   >
     <div
       class="flex items-baseline justify-end sm:justify-between p-4 max-w-screen-xl mx-auto flex-col content-start"
@@ -13,7 +15,7 @@ import Dash from "../layout/Dash.astro";
         >Pteranodon</a
       >
       <div>
-        <ul class="font-medium mt-3">
+        <ul class="font-medium mt-2">
           <li>
             <a
               href="/dashboard"
@@ -24,16 +26,16 @@ import Dash from "../layout/Dash.astro";
           <li>
             <a
               href="/emporium"
-              class="block transition-all text-blue-600 underline"
+              class="block transition-all text-blue-600 underline mt-2"
               ><i class="fa-solid fa-bag-shopping"></i></i> Emporium</a
             >
-          </li> 
-          <li>
-            <a
-              href="/account"
-              class="block text-zinc-900 transition-all hover:text-blue-600 hover:underline mt-2"
-              ><i class="fa-solid fa-user"></i> Account</a
-            >
+          </li>
+          <p class="text-lg mt-24">Account</p>
+          <p class="sm:text-sm">Mail: {email}</p>
+          <li class="mt-2">
+            <a href="/api/auth/signout" class="mb-10 bg-zinc-900 hover:bg-zinc-100 hover:text-zinc-900 transition-all text-zinc-100 dark:text-zinc-900 px-3 py-1 rounded-md">
+              Sign out
+            </a>
           </li>
         </ul>
       </div>
