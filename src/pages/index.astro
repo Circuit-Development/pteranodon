@@ -1,16 +1,19 @@
 ---
 import Base from "../layout/Base.astro";
 export const prerender = true;
-const title = "Revolutionizing Hosting.";
+const title = "Revolutionizing hosting.";
 ---
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
  h1, p { font-family: 'Fredoka', system-ui, sans-serif; }
 </style>
-<Base title={title}>
-  <main class="flex flex-col gap-2 mt-40 items-center p-4 justify-center">
-    <h1 class="text-8xl sm:text-7xl font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-200 inline-block text-transparent bg-clip-text text-center">{title}</h1>
+<Base title='ServerDeploy'>
+  <main class="flex flex-col gap-2 mt-36 items-center p-4 justify-center">
+    <h1 class="text-8xl sm:text-7xl font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-200 inline-block text-transparent h-1/2 bg-clip-text text-center">{title}</h1>
     <p class="mt-6 text-white text-xl max-w-prose">Ignite the fastest server you have ever seen with your own 2 eyes.</p>
-
+  
+      <button class="rounded-full bg-slate-300 w-3/12 ml-auto mr-auto mt-5 text-xl h-12 font-semibold hover:text-blue-600 transition-all">
+      <a href="/dashboard">Purchase your server<i class="indent-1 fa-solid fa-arrow-right"></i></a>
+    </button>
   </main>
 </Base>

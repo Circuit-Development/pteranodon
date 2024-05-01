@@ -17,7 +17,7 @@ import Dash from "../layout/Dash.astro";
           <li>
             <a
               href="/dashboard"
-              class="block transition-all text-blue-600 underline"
+              class="block text-zinc-900 transition-all hover:text-blue-600 hover:underline mt-2"
               ><i class="fa-solid fa-border-all inline-block"></i> Dashboard</a
             >
           </li>
@@ -27,11 +27,11 @@ import Dash from "../layout/Dash.astro";
               class="block text-zinc-900 transition-all hover:text-blue-600 hover:underline mt-2"
               ><i class="fa-solid fa-bag-shopping"></i></i> Emporium</a
             >
-          </li>
+          </li> 
           <li>
             <a
               href="/account"
-              class="block text-zinc-900 transition-all hover:text-blue-600 hover:underline mt-2"
+              class="block transition-all text-blue-600 underline"
               ><i class="fa-solid fa-user"></i> Account</a
             >
           </li>
@@ -39,4 +39,12 @@ import Dash from "../layout/Dash.astro";
       </div>
     </div>
   </nav>
+
+  <section>
+    <a
+      href="/api/auth/signout"
+      class="mb-10 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 px-3 py-1 rounded-md"
+      >Sign out</a
+    >
+  </section>
 </Dash>
