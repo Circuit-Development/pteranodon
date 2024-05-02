@@ -3,9 +3,8 @@ interface Props {
   title: string;
 }
 
-const description = "Pteranodon";
+const description = "Astro and Supabase demo app";
 const { title } = Astro.props;
-const ogImageURL = new URL("hero.png", Astro.site).href;
 const canonicalURL = new URL(Astro.url).href;
 import Nav from '../components/nav'
 ---
@@ -18,11 +17,9 @@ import Nav from '../components/nav'
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <meta property="twitter:image" content={ogImageURL} />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="og:image" content={ogImageURL} />
     <script src="https://kit.fontawesome.com/1b97dd7005.js" crossorigin="anonymous"></script>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
