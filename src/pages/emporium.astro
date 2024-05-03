@@ -1,43 +1,25 @@
 ---
 import Dash from "../layout/Dash.astro";
 const { email } = Astro.locals
-
 ---
-
 <Dash title="Dashboard">
-  <nav
-    class="border-b w-56 mr-auto bg-white dark:bg-zinc-800 dark:border-zinc-700 rounded-lg mt-6 mb-6 ml-6"
-  >
-    <div
-      class="flex items-baseline justify-end sm:justify-between p-4 max-w-screen-xl mx-auto flex-col content-start"
-    >
-      <a href="/" class="hidden sm:block font-bold text-3xl text-center text-zinc-900"
-        >Pteranodon</a
-      >
-      <div>
-        <ul class="font-medium mt-2">
-          <li>
-            <a
-              href="/dashboard"
-              class="block text-zinc-900 transition-all hover:text-blue-600 hover:underline mt-2"
-              ><i class="fa-solid fa-border-all inline-block"></i> Dashboard</a
-            >
-          </li>
-          <li>
-            <a
-              href="/emporium"
-              class="block transition-all text-blue-600 underline mt-2"
-              ><i class="fa-solid fa-bag-shopping"></i></i> Emporium</a
-            >
-          </li>
-          <p class="text-lg mt-24">Account</p>
-          <p class="sm:text-sm">Mail: {email}</p>
-          <li class="mt-2">
-            <a href="/api/auth/signout" class="mb-10 bg-zinc-900 hover:bg-zinc-100 hover:text-zinc-900 transition-all text-zinc-100 dark:text-zinc-900 px-3 py-1 rounded-md">
-              Sign out
-            </a>
-          </li>
-        </ul>
+  <nav class="relative border-b w-16 mr-auto bg-white dark:bg-zinc-800 dark:border-zinc-700 rounded-lg flex flex-col h-screen">
+    <div class="absolute inset-0 flex flex-col items-center justify-center h-full">
+      <a href="/" class="hidden sm:block font-bold text-3xl text-center text-zinc-900 mt-3">P</a>
+      <ul class="font-medium space-y-4 flex flex-col items-center justify-center h-screen mt-auto my-auto">
+        <li>
+          <a href="/dashboard" class="block transition-all hover:text-blue-600">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/emporium" class="block transition-all text-blue-600 hover:underline">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="mt-auto my-3">
+        <i class="fa-solid fa-gear"></i>
       </div>
     </div>
   </nav>
