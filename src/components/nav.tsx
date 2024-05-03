@@ -8,7 +8,7 @@ export default function Nav() {
             >ServerDeploy</a
           >
           <div>
-            <ul class="font-medium flex items-baseline gap-5">
+            <ul class="font-medium flex items-baseline gap-4">
             <li>
                 <a
                   href="/partners"
