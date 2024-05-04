@@ -5,8 +5,7 @@ export default function Nav() {
         class="flex items-baseline justify-end sm:justify-between p-4 max-w-screen-xl mx-auto"
       >
         <a href="/" class="hidden sm:block font-semibold text-lg text-zinc-900"
-          >ServerDeploy</a
-        >
+          >ServerDeploy</a>
         <div>
           <ul class="font-medium flex items-baseline gap-4">
           <li>
@@ -15,11 +14,6 @@ export default function Nav() {
                 class="block text-zinc-900 transition-all text-lg hover:text-blue-600 hover:underline ml-4">Partners</a
               >
             </li>
-          <a href="/" class="hidden sm:block font-semibold text-lg text-zinc-900"
-            >ServerDeploy</a
-          >
-          <div>
-            <ul class="font-medium flex items-baseline gap-4">
             <li>
               <a
                 href="/dashboard"
@@ -31,7 +25,4 @@ export default function Nav() {
       </div>
     </nav>
   )
-}
-        </nav>
-    )
 }
