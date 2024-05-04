@@ -5,8 +5,7 @@ export default function Nav() {
         class="flex items-baseline justify-end sm:justify-between p-4 max-w-screen-xl mx-auto"
       >
         <a href="/" class="hidden sm:block font-semibold text-lg text-zinc-900"
-          >ServerDeploy</a
-        >
+          >ServerDeploy</a>
         <div>
           <ul class="font-medium flex items-baseline gap-4">
           <li>
