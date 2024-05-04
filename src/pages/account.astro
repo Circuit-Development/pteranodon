@@ -1,0 +1,34 @@
+---
+import Dash from "../layout/Dash.astro";
+const { email } = Astro.locals;
+---
+<Dash title="Dashboard">
+
+  <section class="relative border-b w-16 mr-auto bg-slate-100 dark:bg-zinc-800 dark:border-zinc-700 flex flex-col h-screen">
+    <div class="absolute inset-0 flex flex-col items-center justify-center h-full">
+      <a href="/" class="hidden sm:block font-bold text-3xl text-center text-zinc-900 mt-3">P</a>
+      <ul class="font-medium space-y-4 flex flex-col items-center justify-center h-screen mt-auto my-auto">
+        <li>
+          <a href="/dashboard" class="block transition-all hover:text-blue-600">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/emporium" class="block transition-all hover:text-blue-600 hover:underline">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="mt-auto my-3">
+        <a href="/account"><i class="fa-solid fa-user text-blue-600"></i></a>
+      </div>
+    </div>
+</section>
+<section class="border bg-slate-900 rounded-lg mr-auto w-60 mt-8 h-36">
+    <div>
+        <h1 class="text-lg text-blue-300 ml-2">Account Information</h1>
+        <p class="indent-2 text-white">Email: </p>
+        <p class="indent-2 text-white">{email}</p>
+    </div>
+  </section>
+</Dash>

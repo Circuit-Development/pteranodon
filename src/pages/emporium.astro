@@ -1,9 +1,8 @@
 ---
 import Dash from "../layout/Dash.astro";
-const { email } = Astro.locals
 ---
 <Dash title="Dashboard">
-  <nav class="relative border-b w-16 mr-auto bg-white dark:bg-zinc-800 dark:border-zinc-700 rounded-lg flex flex-col h-screen">
+  <nav class="relative border-b w-16 mr-auto bg-slate-100 dark:bg-zinc-800 dark:border-zinc-700  flex flex-col h-screen">
     <div class="absolute inset-0 flex flex-col items-center justify-center h-full">
       <a href="/" class="hidden sm:block font-bold text-3xl text-center text-zinc-900 mt-3">P</a>
       <ul class="font-medium space-y-4 flex flex-col items-center justify-center h-screen mt-auto my-auto">
@@ -19,7 +18,7 @@ const { email } = Astro.locals
         </li>
       </ul>
       <div class="mt-auto my-3">
-        <i class="fa-solid fa-gear"></i>
+        <a href="/account"><i class="fa-solid fa-user hover:text-blue-600"></i></a>
       </div>
     </div>
   </nav>
