@@ -4,7 +4,7 @@ const { email } = Astro.locals;
 ---
 <Dash title="Dashboard">
 
-  <section class="relative border-b w-16 mr-auto bg-slate-100 dark:bg-zinc-800 dark:border-zinc-700 flex flex-col h-screen">
+  <section class="relative border-b w-16 mr-auto bg-slate-100 flex flex-col h-screen">
     <div class="absolute inset-0 flex flex-col items-center justify-center h-full">
       <a href="/" class="hidden sm:block font-bold text-3xl text-center text-zinc-900 mt-3">P</a>
       <ul class="font-medium space-y-4 flex flex-col items-center justify-center h-screen mt-auto my-auto">
@@ -29,6 +29,8 @@ const { email } = Astro.locals;
         <h1 class="text-lg text-blue-300 ml-2">Account Information</h1>
         <p class="indent-2 text-white">Email: </p>
         <p class="indent-2 text-white">{email}</p>
+        <a href='/api/auth/signout'class="border-0 h-9 bg-gray-200 cursor-pointer hover:bg-slate-600  text-black hover:text-blue-300 transition-all rounded-md w-28 text-center flex flex-col items-center justify-center ml-14 mt-2">Sign Out</a>
+
     </div>
   </section>
 </Dash>

@@ -34,6 +34,8 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     password,
   });
 
+  
+
   if (error) {
     return new Response(error.message, { status: 500 });
   }
