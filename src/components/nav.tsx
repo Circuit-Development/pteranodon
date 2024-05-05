@@ -1,6 +1,6 @@
 export default function Nav() {
   return(
-      <nav class="border-b w-1/2 rounded-full ml-auto mr-auto mt-7 bg-white dark:bg-zinc-800 dark:border-zinc-700">
+      <nav class="border-b w-1/2 rounded-full ml-auto mr-auto mt-7 bg-gray-200">
       <div
         class="flex items-baseline justify-end sm:justify-between p-4 max-w-screen-xl mx-auto"
       >
