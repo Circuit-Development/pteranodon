@@ -9,7 +9,7 @@ const ogImageURL = new URL("hero.png", Astro.site).href;
 const canonicalURL = new URL(Astro.url).href;
 ---
 
-<html lang="en" class="h-full w-full">
+<html lang="en">
   <head>
     <title>{title}</title>
     <meta charset="utf-8" />
@@ -27,7 +27,9 @@ const canonicalURL = new URL(Astro.url).href;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
   </head>
-  <body class="flex flex-col h-full w-full bg-slate-900 dark:text-zinc-100">
+  <body class="flex h-full w-full bg-slate-950 ">
+  <body class="flex h-full w-full bg-slate-950 dark:text-zinc-100">
+  <body class="flex flex-col h-full w-full bg-slate-950 dark:text-zinc-100">
     <slot />   
   </body>
 </html>
